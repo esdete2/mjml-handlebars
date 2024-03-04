@@ -1,0 +1,11 @@
+<mj-button
+  href="{{ href }}"
+  color="#fff"
+  background-color="#8D55F2"
+  font-size="20px"
+  font-weight="bold"
+  text-transform="uppercase"
+  padding-top="40px"
+>
+  {{> @partial-block }}
+</mj-button>

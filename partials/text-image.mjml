@@ -1,0 +1,6 @@
+<mj-section background-color="#fff">
+  <mj-column>
+    <mj-image src="{{ imageSrc }}"></mj-image>
+  </mj-column>
+  <mj-column>{{> @partial-block }}</mj-column>
+</mj-section>

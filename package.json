@@ -1,0 +1,13 @@
+{
+  "name": "@esdete2/mjml-handlebars",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "watch 'mjml ./templates/**/*.mjml -o ./output --config.mjmlConfigPath=./.mjmlconfig.js' ./templates/ ./partials/ --interval=0.5",
+    "build": "mjml ./templates/**/*.mjml -o ./output --config.mjmlConfigPath=./.mjmlconfig.js --config.minify=true"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.8",
+    "mjml": "^4.15.3",
+    "watch": "^1.0.2"
+  }
+}

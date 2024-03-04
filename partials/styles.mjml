@@ -1,0 +1,18 @@
+<mj-style inline="inline">
+  ul {
+    padding-left: 0;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  ul li strong{
+    color: #8D55F2
+  }
+
+  .link {
+    color: #8D55F2;
+    text-decoration: none;
+  }
+</mj-style>
