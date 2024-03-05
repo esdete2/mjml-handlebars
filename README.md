@@ -30,14 +30,15 @@ To preview your email templates in real time, use the "Live Preview" extension i
 
 ### Global Variables with `data.js`
 
-The `data.js` file is designed to store global variables accessible in your MJML templates through Handlebars syntax. Define your global variables within this file, and they will be automatically applied during the template generation process.
+### Global Variables with `data.json`
 
-Example `data.js`:
+The `data.json` file is designed to store global variables accessible in your MJML templates through Handlebars syntax. Define your global variables within this file, and they will be automatically applied during the template generation process.
 
-```javascript
-module.exports = {
-  companyName: "Your Company Name",
-  year: new Date().getFullYear(),
+Example `data.json`:
+
+```json
+{
+  "companyName": "Your Company Name",
   // Add more global variables here
 };
 ```
@@ -56,9 +57,9 @@ Ensure your partial filenames and references match exactly for proper inclusion.
 
 ### Project Structure
 
+* `data.json`: Contains global variables for your templates.
 * `/templates`: MJML files for your email templates.
 * `/partials`: Reusable MJML snippets, automatically registered with Handlebars.
-* `data.js`: Contains global variables for your templates.
 * `/output`: Generated HTML files from MJML templates.
 
 ### Building for Production

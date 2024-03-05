@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const Handlebars = require('handlebars');
-const data = require('./data.js');
+const data = require("./data.json");
 
 const getFilesRecursively = (directory) => {
   let files = [];
