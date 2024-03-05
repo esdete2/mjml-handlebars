@@ -33,8 +33,7 @@ Example `data.json`:
 ```json
 {
   "companyName": "Your Company Name",
-  // Add more global variables here
-};
+}
 ```
 
 ### Partials
