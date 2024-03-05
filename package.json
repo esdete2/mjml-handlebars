@@ -2,11 +2,15 @@
   "name": "@esdete2/mjml-handlebars",
   "version": "0.0.0",
   "scripts": {
-    "dev": "watch 'mjml ./templates/**/*.mjml -o ./output --config.mjmlConfigPath=./.mjmlconfig.js' ./templates/ ./partials/ --interval=0.5",
-    "build": "mjml ./templates/**/*.mjml -o ./output --config.mjmlConfigPath=./.mjmlconfig.js --config.minify=true"
+    "dev": "watch 'yarn mjml:dev' ./templates/ ./partials/ --interval=0.5 & yarn serve",
+    "build": "yarn mjml:build",
+    "serve": "live-server --port=4000 ./output",
+    "mjml:dev": "mjml ./templates/**/*.mjml -o ./output --config.mjmlConfigPath=./.mjmlconfig.js",
+    "mjml:build": "mjml ./templates/**/*.mjml -o ./output --config.mjmlConfigPath=./.mjmlconfig.js --config.minify=true"
   },
   "devDependencies": {
     "handlebars": "^4.7.8",
+    "live-server": "1.2.0",
     "mjml": "^4.15.3",
     "watch": "^1.0.2"
   }

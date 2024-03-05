@@ -16,19 +16,13 @@ yarn install
 
 ### Development Workflow
 
-This project includes a development watcher that monitors changes to `.mjml` files within the `templates` and `partials` folders. To start the watcher, run:
+This project includes a development watcher that monitors changes to `.mjml` files within the `templates` and `partials` folders. This also starts a dev server with hot reload on http://127.0.0.1:4000, which can be used for live preview. To start the watcher, run:
 
 ```bash
 yarn dev
 ```
 
 Upon modification of any MJML files, the watcher will automatically regenerate the HTML output, applying global variables and registered partials.
-
-### Preview
-
-To preview your email templates in real time, use the "Live Preview" extension in Visual Studio Code. It hosts a local server for your HTML output, offering an immediate view of changes. Note that the MJML extension preview won't work with Handlebars syntax, as it doesn't process these expressions. "Live Preview" ensures you see the fully rendered output, including all dynamic content from Handlebars.
-
-### Global Variables with `data.js`
 
 ### Global Variables with `data.json`
 
